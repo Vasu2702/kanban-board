@@ -26,6 +26,31 @@ function App() {
     fetchTicketsAndUsers();
   }, []);
 
+  // Load groupBy and sortBy from localStorage on initial load
+  useEffect(() => {
+    const savedGroupBy = localStorage.getItem('groupBy' || 'status');
+    const savedSortBy = localStorage.getItem('sortBy' || "title");
+    
+    if (savedGroupBy) {
+      setGroupBy(savedGroupBy);
+    }
+    
+    if (savedSortBy) {
+      setSortBy(savedSortBy);
+    }
+  }, []);
+
+  // Store groupBy and sortBy in localStorage whenever they change
+  const handleGroupByChange = (newGroupBy) => {
+    setGroupBy(newGroupBy);
+    localStorage.setItem('groupBy', newGroupBy);
+  };
+
+  const handleSortByChange = (newSortBy) => {
+    setSortBy(newSortBy);
+    localStorage.setItem('sortBy', newSortBy);
+  };
+
   // Toggle display popup visibility
   const togglePopup = () => setIsPopupOpen(!isPopupOpen);
 
@@ -33,18 +58,18 @@ function App() {
     <div className="App">
       {/* Navigation Bar */}
       <nav className="navbar">
-        <button className="display-button" onClick={togglePopup}> <img src={displayIcon} alt="Display Icon" className="display-icon" />Display</button>
-       
-       
+        <button className="display-button" onClick={togglePopup}>
+          <img src={displayIcon} alt="Display Icon" className="display-icon" />Display
+        </button>
       </nav>
 
       {/* Display Popup */}
       {isPopupOpen && (
         <DisplayPopup
           groupBy={groupBy}
-          setGroupBy={setGroupBy}
+          setGroupBy={handleGroupByChange} // Use the new handler
           sortBy={sortBy}
-          setSortBy={setSortBy}
+          setSortBy={handleSortByChange}   // Use the new handler
           closePopup={() => setIsPopupOpen(false)}
         />
       )}

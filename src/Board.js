@@ -15,6 +15,7 @@ import four from './4.svg';
 import zero from './default.svg';
 
 function Board({ tickets, users, groupBy, sortBy }) {
+  
   const getStatusImage = (status) => {
     switch (status) {
       case 'Todo':
