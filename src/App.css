@@ -1,0 +1,56 @@
+.App {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+html, body, #root, .App {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fafafa;
+  padding: 15px 20px;
+  color: white;
+}
+
+.display-button {
+  background: white;
+  color: #007bff;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.navbar-title {
+  font-size: 24px;
+}
+.display-button {
+  display: flex;
+  align-items: center;
+ 
+
+ 
+  height: 4vh;
+  width: 7vw;
+  border-radius: 11px;
+  border: 1px solid #e4e4e4;
+  background: white;
+  color: #01060c;
+  /* border: none; */
+  padding: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.display-icon {
+  width: 16px; /* Set width as needed */
+  height: 16px;
+  margin-right: 8px; /* Space between the icon and text */
+}
+
+

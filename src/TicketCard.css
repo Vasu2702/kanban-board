@@ -1,0 +1,143 @@
+.ticket-card {
+    border: 1px solid rgb(217 210 210); /* Black border */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    padding: 15px; /* Padding inside the card */
+    margin: 10px 0; /* Margin between cards */
+    background-color: white; /* White background for contrast */
+    transition: box-shadow 0.3s; /* Smooth transition for shadow on hover */
+    position: relative; /* Position relative for absolute child elements */
+    height: 70px;
+  }
+  
+  .ticket-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Darker shadow on hover */
+  }
+  
+  .ticket-card .user-id {
+    margin: 0px; 
+    color : lightgrey;
+    position: relative;
+    top: -7px;
+  
+    font-size: 12px;
+  }
+  .ticket-titlep h3{
+position: relative;
+left: 1vw;
+  }
+  .prior{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    
+    
+  }
+  .features-box .grey-box {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #b6b4b4; /* Gray color for circular icon */
+    margin-right: 6px;
+}
+  
+  .ticket-header {
+    column-gap: 0.5vw;
+    margin-top: -11px;
+    position: fixed;
+    display: flex; /* Flexbox to align checkbox and title */
+    align-items: center; /* Center align items vertically */
+  }
+  
+  .ticket-checkbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #272525;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  
+  .ticket-checkbox .checkmark {
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    background-color: purple;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #272525;
+    border-radius: 50%;
+    justify-content: center;
+    
+  }
+  
+  .ticket-checkbox.checked {
+    background-color: black;
+    color: white;
+  }
+ /* TicketCard.css */
+
+.ticket-card .priorityy {
+
+}
+
+  .ticket-card h3 {
+    
+    position: relative;
+    width: 200px;
+    flex: 1; /* Ensure title takes available space */
+    font-size: 11px;
+    margin: 10px 0;
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Ellipsis for overflowed text */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* Limit to two lines */
+    -webkit-box-orient: vertical;
+    line-height: 1.2em; /* Line height for two lines */
+    max-height: 2.4em; /* Restrict height to two lines */
+    white-space: norm}
+  
+  .ticket-card p {
+    margin: 5px 0; /* Spacing between paragraphs */
+  }
+  /* Priority image and Features Required box container */
+.priority-features-container {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  margin-top: 36px;
+
+}
+
+/* Priority image styling */
+.priority-image {
+  border-radius: 4px;
+  border: 1px solid #f1eded;
+  width: 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+/* Features Required box styling */
+.features-box {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #555;
+  
+  border: 1px solid #f1eded;
+}
+
+.features-box img {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+ 
+  

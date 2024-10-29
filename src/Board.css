@@ -1,0 +1,114 @@
+.board {
+    display: flex; /* Align columns horizontally */
+    flex-wrap: nowrap; /* Ensure columns do not wrap */
+    background-color: #f4f4f9;
+  }
+  
+  .board-column {
+    flex: 1; /* Each column takes equal space */
+    padding: 10px; /* Add padding for aesthetics */
+    margin: 5px; /* Margin between columns */
+    /* Allow overflow in case of many tickets */
+     /* Optional border for clarity */
+    /* Optional background color for better visibility */
+    border-radius: 5px; /* Optional rounded corners */
+  }
+  
+  .board-column h2 {
+    text-align: center; /* Center group heading */
+    margin-bottom: 10px; /* Space below heading */
+  }
+  /* Board.css */
+
+
+  
+  .user-header {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 12px;
+  }
+  .priority-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+   
+  }
+  
+  .priority-header-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .priority-name {
+    margin-left: 10px;
+  }
+  
+  .priority-header-right {
+    display: flex;
+  }
+  
+  
+  .avatar-img,
+  .avatar-initials {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    font-size: 10px;
+    margin-right: 8px;
+  }
+  
+  .avatar-initials {
+    background-color: #ccc;
+  }
+ 
+  .user-name {
+    flex: 1 1;
+    font-size: 12px;
+    font-weight: 700;
+    color: #333;
+  }
+  
+  .icon-plus,
+  .icon-three-dots {
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+    cursor: pointer;
+  }
+  .status-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px; /* Add padding for spacing */
+  }
+  
+  .status-header-left {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between logo and status name */
+  }
+  
+  .status-image {
+    width: 13px;
+    height: 13px;
+  }
+  
+  .status-name {
+    font-weight: bold;
+  }
+  
+  .status-header-right {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Space between plus and three-dots icons */
+  }
+  
+  
+  
